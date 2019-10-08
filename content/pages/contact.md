@@ -1,12 +1,12 @@
 ---
 template: ContactPage
-slug: contact
-title: Contact Page
+slug: lien-he
+title: Liên hệ
 featuredImage: https://ucarecdn.com/e22a858a-b420-47af-99f6-ed54b6860333/
-subtitle: This is the contact page subtitle.
-address: '404 James St, Burleigh Heads QLD 4220'
-phone: 0987 123 456
-email: example@example.com
+subtitle: Vui lòng liên hệ theo thông tin dưới đây.
+address: 'Thôn 7, xã Nam Bình, huyện Đăk Song, tỉnh Đăk Nông.'
+phone: 0936940497
+email: giaoxuhuongson@gmail.com
 locations:
   - lat: '-27.9654732'
     lng: '153.2432449'
