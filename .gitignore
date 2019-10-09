@@ -9,3 +9,6 @@ static/admin/*.bundle.*
 yarn-error.log
 package-lock.json
 package.json
+
+package-lock.json
+package.json

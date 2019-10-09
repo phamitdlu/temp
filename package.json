@@ -5,15 +5,15 @@
   "version": "2.0.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/thriveweb/yellowcake"
+    "url": "git+https://github.com/thriveweb/yellowcake.git"
   },
   "dependencies": {
     "@reach/router": "^1.2.1",
     "date-fns": "^1.30.1",
     "dom-form-serializer": "^1.0.7",
-    "gatsby": "^2.0.97",
+    "gatsby": "^2.15.33",
     "gatsby-image": "^2.0.27",
-    "gatsby-plugin-google-tagmanager": "^2.1.4",
+    "gatsby-plugin-google-tagmanager": "^2.1.12",
     "gatsby-plugin-manifest": "^2.0.13",
     "gatsby-plugin-netlify": "^2.0.6",
     "gatsby-plugin-netlify-cms": "^4.1.6",
@@ -39,8 +39,8 @@
     "node-sass": "^4.11.0",
     "postcss-preset-env": "^6.5.0",
     "prop-types": "^15.6.2",
-    "react": "^16.7.0",
-    "react-dom": "^16.7.0",
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2",
     "react-feather": "^2.0.3",
     "react-helmet": "^5.2.0",
     "react-markdown": "^4.0.6",
@@ -63,5 +63,10 @@
   "devDependencies": {
     "del-cli": "^2.0.0",
     "prettier": "^1.16.1"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/thriveweb/yellowcake/issues"
+  },
+  "homepage": "https://github.com/thriveweb/yellowcake#readme",
+  "author": ""
 }
