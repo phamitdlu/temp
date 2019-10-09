@@ -5,8 +5,8 @@ title: Giáo xứ Hương Sơn
 featuredImage: 'https://ucarecdn.com/159203d3-881d-4218-baa1-ca4427b48d0d/'
 subtitle: Chào mừng tới trang chủ Giáo xứ Hương Sơn
 meta:
-  description: This is a meta description.
-  title: The Ultimate Gatsby Starter
+  description: Nơi lưu trữ thông tin, truyền tải những thông điệp hòa bình bác ái của Cộng đồng Giáo xứ Hương Sơn - Đăk Song, Đăk Nông - Giáo phận Buôn Mê Thuột.
+  title: Trang chủ
 ---
 Yellowcake is an opinionated starter project created by [Thrive Digital](https://thriveweb.com.au/) a [Gold Coast Web Design](https://thriveweb.com.au/) studio. to help you create lightening fast websites with [Gatsby](https://gatsbyjs.org) and [Netlify CMS](https://netlifycms.org).
 
