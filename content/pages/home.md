@@ -3,7 +3,7 @@ template: HomePage
 slug: ''
 title: Giáo xứ Hương Sơn
 featuredImage: 'https://ucarecdn.com/159203d3-881d-4218-baa1-ca4427b48d0d/'
-subtitle: ' Welcome to the ultimate Gatsby and Netlify starter project.'
+subtitle: Chào mừng tới trang chủ Giáo xứ Hương Sơn
 meta:
   description: This is a meta description.
   title: The Ultimate Gatsby Starter
