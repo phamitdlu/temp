@@ -2,6 +2,7 @@ import React from 'react'
 import { graphql } from 'gatsby'
 
 import PageHeader from '../components/PageHeader'
+import SlideHeader from '../components/SlideHeader'
 import Content from '../components/Content'
 import Layout from '../components/Layout'
 
@@ -14,6 +15,8 @@ export const HomePageTemplate = ({ title, subtitle, featuredImage, body }) => (
       subtitle={subtitle}
       backgroundImage={featuredImage}
     />
+
+    <SlideHeader />
 
     <section className="section">
       <div className="container">
