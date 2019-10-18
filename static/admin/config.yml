@@ -405,7 +405,8 @@ collections: # A list of collections the CMS should be able to edit
               widget: string,
               required: false,
             }
-          - { label: Noindex, name: noindex, widget: boolean, required: false }
+          - { label: Noindex, name: noindex, widget: number, required: false }
+          - { label: Activated, name: activated, widget: boolean, required: false }
 
   - name: 'settings'
     label: 'Settings'
