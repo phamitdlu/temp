@@ -47,14 +47,7 @@ export default ({ children, meta, title }) => {
                   slug
                 }
                 frontmatter {
-                  title 
-                  subtitle  
-                  featuredImage       
-                  meta {
-                    title
-                    noindex
-                    description
-                  }    
+                  title                  
                 }
               }
             }
@@ -74,7 +67,7 @@ export default ({ children, meta, title }) => {
           sliders = {
             posts: data.allSliders.hasOwnProperty('edges')
               ? data.allSliders.edges.map(post => {
-                  return { ...post.node.fields, ...post.node.frontmatter, ...post.node.subtitle, ...post.node.featuredImage, ...post.node.meta }
+                  return { ...post.node.fields, ...post.node.frontmatter }
                 })
               : false
           }

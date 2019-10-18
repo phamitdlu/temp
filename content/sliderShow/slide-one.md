@@ -4,9 +4,7 @@ title: slide one
 subtitle: title ở đây
 featuredImage: 'https://ucarecdn.com/12e55761-c17e-40e2-bb92-62ffeccc19c4/'
 meta:
-  activated: true
   description: thêm thông tin ở đây
-  noindex: 1
   title: tiêu đề nhỏ ở đây
 ---
 
