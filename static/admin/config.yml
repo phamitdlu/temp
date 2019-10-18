@@ -387,6 +387,9 @@ collections: # A list of collections the CMS should be able to edit
           widget: image,
           required: false,
         }
+      - { label: Activated, name: activated, widget: boolean, required: false, default: true }
+      - { label: Position, name: position, widget: number, required: false }
+      - { label: Color Caption, name: colorcap, widget: select, options [{ label: "White", value: "white" }, { label: "Dark Cyan", value: "#85d1bc" }, { label: "Light Green", value: "#78c04e" }], required: false, default: "#78c04e" }
       - label: 'Meta'
         required: false
         name: 'meta'
@@ -405,9 +408,7 @@ collections: # A list of collections the CMS should be able to edit
               widget: string,
               required: false,
             }
-          - { label: Noindex, name: noindex, widget: boolean, required: false }
-      - { label: Activated, name: activated, widget: boolean, required: false }
-      - { label: Position, name: position, widget: number, required: false }
+          - { label: Noindex, name: noindex, widget: boolean, required: false }      
 
   - name: 'settings'
     label: 'Settings'

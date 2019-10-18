@@ -39,7 +39,7 @@ export default ({ children, meta, title }) => {
           }
           allSliders: allMarkdownRemark(
             filter: { fields: { contentType: { eq: "sliderShow" } } }
-            sort: { order: DESC, fields: [frontmatter___date] }
+            sort: { order: ASC, fields: [frontmatter___position, frontmatter___date] }
           ) {
             edges {
               node {
@@ -47,7 +47,16 @@ export default ({ children, meta, title }) => {
                   slug
                 }
                 frontmatter {
-                  title                  
+                  title
+                  subtitle
+                  featuredImage
+                  activated
+                  position     
+                  meta {
+                    description
+                    title
+                  }
+                               
                 }
               }
             }
@@ -73,7 +82,6 @@ export default ({ children, meta, title }) => {
           }
 
         console.log(sliders.posts)
-        console.log(data.allSliders)
 
         return (
           <Fragment>
