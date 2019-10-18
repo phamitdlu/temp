@@ -1,25 +1,28 @@
 import React from 'react'
+
+import { Carousel } from 'react-bootstrap';
 //import PropTypes from 'prop-types'
-import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
-import 'pure-react-carousel/dist/react-carousel.es.css';
+import './SlideHeader.scss'
 
 export default class SliderHeader extends React.PureComponent {
   render() {
     var slides = Array(3).fill(true);
     return (
-      <CarouselProvider
-        naturalSlideWidth={100}
-        naturalSlideHeight={125}
-        totalSlides={3}
-      >
-        <Slider>
-          <Slide index={0}>I am the first Slide.</Slide>
-          <Slide index={1}>I am the second Slide.</Slide>
-          <Slide index={2}>I am the third Slide.</Slide>
-        </Slider>
-        <ButtonBack>Back</ButtonBack>
-        <ButtonNext>Next</ButtonNext>
-      </CarouselProvider>
+      <Carousel>
+        {slides.map((item, i) => (
+          <Carousel.Item key={i}>
+          <img
+              className="d-block w-100"
+              src="https://ucarecdn.com/159203d3-881d-4218-baa1-ca4427b48d0d/-/progressive/yes/-/format/auto/-/resize/2000x/"
+              alt="First slide"
+            />
+            <Carousel.Caption className="color-red">
+              <h3>First slide label</h3>
+              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+        ))}
+      </Carousel>
     )
   }
 }
