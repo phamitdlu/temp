@@ -5,7 +5,8 @@ subtitle: title ở đây
 featuredImage: 'https://ucarecdn.com/12e55761-c17e-40e2-bb92-62ffeccc19c4/'
 meta:
   description: thêm thông tin ở đây
-  noindex: true
+  noindex: 0
+  ishow: true
   title: tiêu đề nhỏ ở đây
 ---
 

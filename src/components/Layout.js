@@ -37,6 +37,28 @@ export default ({ children, meta, title }) => {
               }
             }
           }
+          allSliders: allMarkdownRemark(
+            filter: { fields: { contentType: { eq: "sliderShow" } } }
+            sort: { order: DESC, fields: [frontmatter___date] }
+          ) {
+            edges {
+              node {
+                fields {
+                  slug
+                }
+                frontmatter {
+                  title 
+                  subtitle  
+                  featuredImage       
+                  meta {
+                    title
+                    noindex
+                    description
+                  }    
+                }
+              }
+            }
+          }
         }
       `}
       render={data => {
@@ -48,7 +70,17 @@ export default ({ children, meta, title }) => {
                   return { ...post.node.fields, ...post.node.frontmatter }
                 })
               : false
+          },
+          sliders = {
+            posts: data.allSliders.hasOwnProperty('edges')
+              ? data.allSliders.edges.map(post => {
+                  return { ...post.node.fields, ...post.node.frontmatter, ...post.node.subtitle, ...post.node.featuredImage, ...post.node.meta }
+                })
+              : false
           }
+
+        console.log(sliders.posts)
+        console.log(data.allSliders)
 
         return (
           <Fragment>
