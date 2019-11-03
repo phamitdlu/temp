@@ -408,7 +408,8 @@ collections: # A list of collections the CMS should be able to edit
               widget: string,
               required: false,
             }
-          - { label: Noindex, name: noindex, widget: boolean, required: false }  
+          - { label: Noindex, name: noindex, widget: boolean, required: false } 
+           
   - name: navCategory
     label: Nav Category
     editor:
