@@ -389,7 +389,7 @@ collections: # A list of collections the CMS should be able to edit
         }
       - { label: Activated, name: activated, widget: boolean, required: false, default: true }
       - { label: Position, name: position, widget: number, required: false }
-      - { label: Color Caption, name: colorcap, widget: select, options [{ label: "White", value: "white" }, { label: "Dark Cyan", value: "#85d1bc" }, { label: "Light Green", value: "#78c04e" }], required: false, default: "#78c04e" }
+      - { label: Color Caption, name: colorcap, widget: select, options [{ label: "White", value: "white" }, { label: "Dark Cyan", value: "c85d1bc" }, { label: "Light Green", value: "c78c04e" }], required: false, default: "c78c04e" }
       - label: 'Meta'
         required: false
         name: 'meta'
