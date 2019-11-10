@@ -1,7 +1,7 @@
 ---
 template: ComponentsPage
 slug: components
-title: Tổng quan
+title: Tổng quan a
 featuredImage: 'https://ucarecdn.com/df0dc650-6938-412f-aefb-2019d2349e13/'
 subtitle: This is the components page subtitle.
 section1: >-
@@ -47,6 +47,6 @@ gallery:
     title: Yellow Ice Cream
 meta:
   description: This is a meta description.
-  title: Components Page
+  title: Tổng quan
 ---
 
