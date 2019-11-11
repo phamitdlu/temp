@@ -72,3 +72,4 @@ const IdPreview = window.createClass({
 
 // Register the widget. This lets NetlifyCMS know about our custom widget
 CMS.registerWidget('id', IdControl, IdPreview);
+console.log(uuid());
