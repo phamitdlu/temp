@@ -345,7 +345,7 @@ collections: # A list of collections the CMS should be able to edit
       - { label: Template, name: template, widget: hidden, default: BlogIndex }
       - { label: Title, name: title, widget: string }
       - { label: Subtitle, name: subtitle, widget: string, required: false }
-      - { label: 'Nav Category', name: 'navCategory', widget: 'relation', collection: 'navCategory', searchFields: ['name.title'],  valueField: 'name.id', displayFields: ['name.title'] }
+      - { label: 'Nav Category', name: 'navCategory', widget: 'relation', collection: 'navCategory', searchFields: ['title'],  valueField: 'id', displayFields: ['title'] }
       - {
           label: Featured Image,
           name: featuredImage,
