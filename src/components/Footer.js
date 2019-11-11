@@ -2,6 +2,8 @@ import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import InstagramFeed from './InstagramFeed'
 
+
+
 import './Footer.css'
 
 export default () => (
