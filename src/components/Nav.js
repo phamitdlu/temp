@@ -72,11 +72,11 @@ export class Navigation extends Component {
                 <NavLink to="/tin-tuc/" className="Nav--GroupLink">
                   Tất cả
                 </NavLink>
-                {subNav.posts.map((link, index) => (
+                {subNav.posts.map((link, index) => (                  
                   <NavLink
                     to={link.slug}
                     key={'posts-subnav-link-' + index}
-                    className="Nav--GroupLink"
+                    className={"Nav--GroupLink" + link.id}
                   >
                     {link.title}
                   </NavLink>

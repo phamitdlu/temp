@@ -22,6 +22,20 @@ export default ({ children, meta, title }) => {
               image
             }
           }
+          allNavCats: allMarkdownRemark(filter: {fields: {contentType: {eq: "navCategory"}}, frontmatter: {activated: {eq: true}}}, sort: {fields: frontmatter___position, order: ASC}) {
+            nodes {
+              fields {
+                slug
+                contentType
+              }
+              frontmatter {
+                title
+                navCategory
+                position
+              }
+              id
+            }
+          }
           allPosts: allMarkdownRemark(
             filter: { fields: { contentType: { eq: "postCategories" } } }
             sort: { order: DESC, fields: [frontmatter___date] }
@@ -33,7 +47,9 @@ export default ({ children, meta, title }) => {
                 }
                 frontmatter {
                   title
+                  navCategory
                 }
+                id
               }
             }
           }
@@ -45,7 +61,7 @@ export default ({ children, meta, title }) => {
           subNav = {
             posts: data.allPosts.hasOwnProperty('edges')
               ? data.allPosts.edges.map(post => {
-                  return { ...post.node.fields, ...post.node.frontmatter }
+                  return { ...post.node.fields, ...post.node.frontmatter, ...post.node.id }
                 })
               : false
           }
