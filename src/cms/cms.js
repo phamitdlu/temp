@@ -45,4 +45,4 @@ CMS.registerPreviewTemplate('posts', ({ entry }) => (
 ))
 
 // Register the widget. This lets NetlifyCMS know about our custom widget
-CMS.registerWidget('uid', UIDWidget.Control, UIDWidget.Preview);
+//CMS.registerWidget('uid', UIDWidget.Control, UIDWidget.Preview);
