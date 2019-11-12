@@ -12,6 +12,8 @@ import { DefaultPageTemplate } from '../templates/DefaultPage'
 import { BlogIndexTemplate } from '../templates/BlogIndex'
 import { SinglePostTemplate } from '../templates/SinglePost'
 
+console.log("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
+
 if (
   window.location.hostname === 'localhost' &&
   window.localStorage.getItem('netlifySiteURL')
@@ -43,5 +45,4 @@ CMS.registerPreviewTemplate('posts', ({ entry }) => (
 ))
 
 // Register the widget. This lets NetlifyCMS know about our custom widget
-CMS.registerWidget('id', UIDWidget.Control, UIDWidget.Preview);
-console.log(uuid());
+CMS.registerWidget('uid', UIDWidget.Control, UIDWidget.Preview);

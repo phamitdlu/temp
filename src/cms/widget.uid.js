@@ -2,14 +2,14 @@ import React from 'react';
 import uuid from 'uuid/v4';
 
 
-export const Control = ({ value = uuid() }) => {
+export const Control = React.forwardRef(({ value = uuid() }, forwardRef) => {
     return (
-        <div>{value}</div>
+        <div ref={forwardRef}>{value}</div>
     )
-}
+})
 
-export const Preview = ({ value }) => {
+export const Preview = React.forwardRef(({ value }, forwardRef) => {
     return (
-        <div>{value}</div>
+        <div ref={forwardRef}>{value}</div>
     )
-}
+})
