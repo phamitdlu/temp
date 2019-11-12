@@ -1,6 +1,7 @@
 import React from 'react'
 import CMS from 'netlify-cms'
 import './cms-utils'
+import uuid from 'uuid/v4';
 
 
 import { HomePageTemplate } from '../templates/HomePage'
@@ -40,7 +41,7 @@ CMS.registerPreviewTemplate('posts', ({ entry }) => (
   <SinglePostTemplate {...entry.toJS().data} />
 ))
 
-import uuid from 'uuid/v4';
+
 /**
  * Create the control widget, this will add a form element to the cms UI
  */
