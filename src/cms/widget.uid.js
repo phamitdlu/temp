@@ -2,9 +2,10 @@ import React from 'react';
 import uuid from 'uuid/v4';
 
 
-export const Control = React.forwardRef(({ value = uuid() }, forwardRef) => {
+export const Control = React.forwardRef(({ onChange, forID, value = uuid() }, forwardRef) => {
+    
     return (
-        <div ref={forwardRef}>{value}</div>
+        <div id={forID} ref={forwardRef}>{value}</div>
     )
 })
 
