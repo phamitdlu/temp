@@ -2,9 +2,6 @@ import React from 'react'
 import CMS from 'netlify-cms'
 import './cms-utils'
 
-import * as UIDWidget from './widget.uid';
-
-
 import { HomePageTemplate } from '../templates/HomePage'
 import { ComponentsPageTemplate } from '../templates/ComponentsPage'
 import { ContactPageTemplate } from '../templates/ContactPage'
@@ -13,6 +10,8 @@ import { BlogIndexTemplate } from '../templates/BlogIndex'
 import { SinglePostTemplate } from '../templates/SinglePost'
 
 console.log("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
+// Register the widget. This lets NetlifyCMS know about our custom widget
+//CMS.registerWidget('uid', UIDWidget.Control, UIDWidget.Preview);
 
 if (
   window.location.hostname === 'localhost' &&
@@ -44,5 +43,4 @@ CMS.registerPreviewTemplate('posts', ({ entry }) => (
   <SinglePostTemplate {...entry.toJS().data} />
 ))
 
-// Register the widget. This lets NetlifyCMS know about our custom widget
-//CMS.registerWidget('uid', UIDWidget.Control, UIDWidget.Preview);
+
